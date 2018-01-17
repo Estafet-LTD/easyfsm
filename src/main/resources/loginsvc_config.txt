@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FSM>
+
+<STATE id = "START_loginsvc_4">
+	<MESSAGE id = "accept_connection__from_requestor" action = "org.tw.scribble.accept_connection" nextState = "__accept_connection__from_requestor_DONE_6"/>
+</STATE>
+<STATE id = "__accept_connection__from_requestor_DONE_6">
+	<MESSAGE id = "receiveMessage(login(username, password))__from_requestor" action = "org.tw.scribble.receiveMessage" nextState = "__receiveMessage(login(username, password))__from_requestor_DONE_7"/>
+</STATE>
+<STATE id = "__receiveMessage(login(username, password))__from_requestor_DONE_7">
+	<MESSAGE id = "sendMessage(loginfailure())__to_requestor" action = "org.tw.scribble.sendMessage" nextState = "__sendMessage(loginfailure())__to_requestor_DONE_5"/>
+	<MESSAGE id = "sendMessage(loginsuccess())__to_requestor" action = "org.tw.scribble.sendMessage" nextState = "__sendMessage(loginfailure())__to_requestor_DONE_5"/>
+</STATE>
+<STATE id = "__sendMessage(loginfailure())__to_requestor_DONE_5">
+</STATE>
+
+</FSM>
