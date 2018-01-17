@@ -3,7 +3,7 @@
   <groupId>com.scribble</groupId>
   <artifactId>easyfsm</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
   <dependencies>
   	<dependency>
   		<groupId>junit</groupId>
